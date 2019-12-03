@@ -12,7 +12,7 @@ class App extends Component {
     }
   }
 
-  handleAddInput = (e) => {
+  handleAddInput = e => {
     const display = this.state.display
     if(this.state.numberCheck === false){ 
         if(isNaN(e.target.id) === true){ 
@@ -45,7 +45,7 @@ class App extends Component {
     })
   }
 
-  handleOnClick = (e) => {
+  handleOnClick = e => {
     switch(e.target.id){
         case "=" :
             this.handleCalculate()
